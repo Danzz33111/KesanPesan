@@ -2598,17 +2598,14 @@
             );
           } catch (e) {}
 
-          var emailPengirim = "m.ramdanrizkia23@gmail.com"; // isi email pengirim jika ada
-          if (emailPengirim) {
-            var subject = encodeURIComponent("Balasan surat permintaan maaf");
-            var body = encodeURIComponent(isi + "\n\n— Mentor baikk");
+          var waNumber = "6285156005840"; // nomor WhatsApp tujuan
+          if (waNumber) {
+            var text = encodeURIComponent(isi + "\n\n— Mentor baikk");
             window.location.href =
-              "mailto:" +
-              emailPengirim +
-              "?subject=" +
-              subject +
-              "&body=" +
-              body;
+              "https://wa.me/" +
+              waNumber +
+              "?text=" +
+              text;
           }
 
           replyText.blur();
